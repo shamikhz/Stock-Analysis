@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stock Market Analysis</h1>
+    <main>
+        <div id="main">
+            <div id="main-first">
+                <canvas id="stockCanvas"></canvas>
+                <div id="time-buttons">
+                    <button onclick="changeTimeRange('1month')">1 Month</button>
+                    <button onclick="changeTimeRange('3month')">3 Months</button>
+                    <button onclick="changeTimeRange('1year')">1 Year</button>
+                    <button onclick="changeTimeRange('5year')">5 Years</button>
+                </div>
+                <div id="change"></div>
+                <div id="info"></div>
+            </div>
+            <div id="main-second">
+                <ul id="stock-list"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
